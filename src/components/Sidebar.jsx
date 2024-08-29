@@ -2,25 +2,36 @@ import React from "react";
 import DownloadButton from "./DownloadButton";
 import PeopleOutlineIcon from "@mui/icons-material/PeopleOutline";
 import BusinessIcon from "@mui/icons-material/Business";
-import PlaceTwoToneIcon from '@mui/icons-material/PlaceTwoTone';
-
+import PlaceTwoToneIcon from "@mui/icons-material/PlaceTwoTone";
+import DigitalClock from "./DigitalClock";
+import WatchLaterIcon from "@mui/icons-material/WatchLater";
+import MailOutlineIcon from "@mui/icons-material/MailOutline";
+import BiotechIcon from "@mui/icons-material/Biotech";
+import LinkedInIcon from "@mui/icons-material/LinkedIn";
+import TwitterIcon from "@mui/icons-material/Twitter";
+import QueryStatsIcon from "@mui/icons-material/QueryStats";
+import Avatar from "@mui/material/Avatar";
+import Stack from "@mui/material/Stack";
+import GitHubIcon from "@mui/icons-material/GitHub";
 const Sidebar = () => {
   return (
     <div className="bg-gray-900 text-white p-4 rounded-lg shadow-lg max-w-sm mx-auto sm:max-w-md md:max-w-lg lg:max-w-xl">
       <div className="flex items-center justify-center w-32 h-32 rounded-full mb-8 mx-auto">
         <div className="relative">
           <img
-            src="https://avatars.githubusercontent.com/u/107450069?v=4"
+            src="https://storage.googleapis.com/kaggle-avatars/images/13241788-kg.png"
             alt="Profile Picture"
             className="w-28 h-28 rounded-full"
           />
           <div className="absolute bottom-2 -right-5 flex items-center justify-center w-8 h-8 rounded-full bg-black group">
             <span className="text-red-500 text-xl">🦊</span>
-            <div className="absolute -bottom-4 -right-20 invisible group-hover:visible align-top 
+            <div
+              className="absolute -bottom-4 -right-20 invisible group-hover:visible align-top 
             	text-decoration-line: underline bg-gray-500 
                text-cyan-400 text-xs rounded-md font-bold
-               font-weight:800 p-1">
-               KEEP CODING 
+               font-weight:800 p-1"
+            >
+              KEEP CODING
             </div>
           </div>
         </div>
@@ -43,9 +54,13 @@ const Sidebar = () => {
       <div className="mt-4">
         <div className="flex items-center mb-2">
           <div className="flex items-left mr-2">
-            <PeopleOutlineIcon className="text-gray-400 mr-1" />
-            <span className="text-gray-1
-            00">81 following</span>
+            <PeopleOutlineIcon className="text-gray-100 mr-1" />
+            <span
+              className="text-gray-1
+            00"
+            >
+              81 following
+            </span>
           </div>
 
           <div className="flex items-right">
@@ -54,11 +69,11 @@ const Sidebar = () => {
         </div>
 
         <div className="flex items-center mb-2">
-          <BusinessIcon className="text-gray-400 mr-2" />
+          <BusinessIcon className="text-gray-100 mr-2" />
           <a
             href="https://github.com/TheBoringRats"
             target="_blank"
-            className="text-gray-400"
+            className="text-gray-100"
           >
             TheBoringRats
           </a>
@@ -66,45 +81,77 @@ const Sidebar = () => {
 
         <div className="flex items-center mb-2">
           <PlaceTwoToneIcon className="text-gray-100 mr-2 " />
-         
+
           <span className="text-gray-100">Dhaka, Bangladesh.</span>
         </div>
 
         <div className="flex items-center mb-2">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            className="h-5 w-5 text-gray-400 mr-2"
-            viewBox="0 0 20 20"
-            fill="currentColor"
-          >
-            <path d="M10 12a2 2 0 100-4 2 2 0 000 4z" />
-            <path d="M10 0a10 10 0 1010 10A10 10 0 0010 0z" />
-          </svg>
-          <span className="text-gray-400">01:07 (UTC -12:00)</span>
+          <WatchLaterIcon className="text-gray-100 mr-2" />
+          <span className="text-gray-100">
+            <DigitalClock />
+          </span>
         </div>
 
         <div className="flex items-center mb-2">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            className="h-5 w-5 text-gray-400 mr-2"
-            viewBox="0 0 20 20"
-            fill="currentColor"
+          <MailOutlineIcon className="text-gray-100 mr-2" />
+          <a
+            href="mailto:swadhinbiswas.cse@gmail.com"
+            target="_blank"
+            className="text-gray-100"
           >
-            <path d="M2.003 5.884L10 12.138V16a2 2 0 104 0V12.138l7.997-6.254A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z" />
-          </svg>
-          <span className="text-gray-400">swadhinbiswas.cse@gmail.com</span>
+            swadhinbiswas.cse@gmail.com
+          </a>
         </div>
 
         <div className="flex items-center mb-2">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            className="h-5 w-5 text-gray-400 mr-2"
-            viewBox="0 0 20 20"
-            fill="currentColor"
+          <BiotechIcon className="text-gray-100 mr-2" />
+          <a
+            href="https://orcid.org/0009-0005-2980-6651"
+            target="_blank"
+            className="text-gray-100"
           >
-            <path d="M11 3a1 1 0 011 1v1a1 1 0 01-1 1H9a1 1 0 01-1-1V4a1 1 0 011-1h2zm-1 9a1 1 0 011 1v1a1 1 0 01-1 1H9a1 1 0 01-1-1V12a1 1 0 011-1h2zm-9 2a1 1 0 011 1v1a1 1 0 01-1 1H2a1 1 0 01-1-1V15a1 1 0 011-1h2zm6 4a1 1 0 011 1v1a1 1 0 01-1 1H7a1 1 0 01-1-1V19a1 1 0 011-1h2zm3-13a1 1 0 011 1v1a1 1 0 01-1 1H13a1 1 0 01-1-1V3a1 1 0 011-1h2zm-3 2a1 1 0 011 1v1a1 1 0 01-1 1H8a1 1 0 01-1-1V6a1 1 0 011-1h2zm9 0a1 1 0 011 1v1a1 1 0 01-1 1H16a1 1 0 01-1-1V5a1 1 0 011-1h2zM2 3a1 1 0 011 1v1a1 1 0 01-1 1H0a1 1 0 01-1-1V4a1 1 0 011-1h2zm10 16a1 1 0 011 1v1a1 1 0 01-1 1H10a1 1 0 01-1-1V19a1 1 0 011-1h2zM8 11a1 1 0 011 1v1a1 1 0 01-1 1H7a1 1 0 01-1-1V12a1 1 0 011-1h1z" />
-          </svg>
-          <span className="text-gray-400">csc.com</span>
+            ORCID
+          </a>
+        </div>
+        <div className="flex items-center mb-2">
+          <LinkedInIcon className="text-gray-100 mr-2" />
+          <a
+            href="https://www.linkedin.com/in/swadh1n/"
+            target="_blank"
+            className="text-gray-100"
+          >
+            /in/swadh1n
+          </a>
+        </div>
+        <div className="flex items-center mb-2">
+          <TwitterIcon className="text-gray-100 mr-2" />
+          <a
+            href="https://twitter.com/swadh1n"
+            target="_blank"
+            className="text-gray-100"
+          >
+            @swadh1n
+          </a>
+        </div>
+        <div className="flex items-center mb-2">
+          <QueryStatsIcon className="text-gray-100 mr-2" />
+          <a
+            href="https://www.kaggle.com/swadhinbiswas"
+            target="_blank"
+            className="text-gray-100"
+          >
+            Kaggle
+          </a>
+        </div>
+        <div className="flex items-center mb-2">
+          <GitHubIcon className="text-gray-100 mr-2" />
+          <a
+            href="https://github.com/swadhinbiswas"
+            target="_blank"
+            className="text-gray-100"
+          >
+            swadhinbiswas
+          </a>
         </div>
       </div>
     </div>
