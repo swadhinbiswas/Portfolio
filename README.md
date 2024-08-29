@@ -1,8 +1,33 @@
-# React + Vite
+# Portfollio 
+It's a Minimal Portfollio Template for Students,CodingEnthusiast and Dev .
+- Tech Used 
+   - React <br>
+   - Tailwind CSS
+   - Matrial UI
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-Currently, two official plugins are available:
+# Design Concept
+![design Conpect](sesignconsept.png)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+
+
+
+
+
+
+# Run The Project
+
+### clone and Run :
+   ```
+   https://github.com/swadhinbiswas/Portfolio
+   ```
+   ```
+   cd Portfollio
+   ```
+   ```
+   npm install 
+   ```
+   ``` 
+   npm run dev --host
+   ```
+
