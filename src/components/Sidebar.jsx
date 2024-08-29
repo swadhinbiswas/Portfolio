@@ -153,7 +153,30 @@ const Sidebar = () => {
             swadhinbiswas
           </a>
         </div>
+
+        <div>
+          <div className="item-center justify-center ">
+            <h6 className="text-gray-100 justify-center font-bold mb-2"> Achievements </h6>
+          </div>
+          <Stack direction="row" spacing={2}>
+            <Avatar
+              alt="Starstruck"
+              src="https://github.githubassets.com/assets/starstruck-default--light-a594e2a027e0.png"
+              
+            />
+            <Avatar
+              alt="Travis Howard"
+              src="https://github.githubassets.com/assets/quickdraw-default--light-8f798b35341a.png"
+              
+            />
+            <Avatar
+              alt="Pull Shark x2"
+              src="https://github.githubassets.com/assets/pull-shark-default-498c279a747d.png"
+            />
+          </Stack>
+        </div>
       </div>
+
     </div>
   );
 };
