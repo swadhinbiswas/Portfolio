@@ -64,7 +64,7 @@ const Sidebar = () => {
           </div>
 
           <div className="flex items-right">
-            <span className="text-gray-100">40 followers</span>
+            <span className="text-gray-100">41 followers</span>
           </div>
         </div>
 

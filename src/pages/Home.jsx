@@ -7,15 +7,19 @@ import About from '../components/About';
 const Home = () => {
   return (
 
-    <div className=' rounded-lg  flex h-screen  '>
-       <div className="bg-gray-800  w-full space-x-4 flex rounded-lg">
-      <div className="flex h-full space-x-14">
+    <div className=' rounded-lg  flex '>
+       <div className="bg-gray-800  w-full space-x-4 flex rounded-lg border border-blue-500">
+      <div className="flex h-full space-x-9">
         <Sidebar className="bg-gray-800 w-1/4" />
-        <div className="flex-1 flex flex-col -left-5 space-y-14">
+        <div className="flex-1 flex flex-col -left-1 space-y-14">
           <div className="mt-10 ">
             <Menu className="bg-gray-900 " />
           </div>
-          <About className="flex-1 bg-gray-900 p-4" />
+          <div className='flex '>
+          <About className="flex-1 bg-gray-900 p-4"/>
+
+          </div>
+         
           
         </div>
 

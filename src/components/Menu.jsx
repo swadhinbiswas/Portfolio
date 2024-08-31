@@ -20,6 +20,9 @@ const Menu = () => {
       <Button variant="outlined" href="#outlined-buttons">
         Education
       </Button>
+      <Button variant="outlined" href="#outlined-buttons">
+        Notes
+      </Button>
     </Stack>
   )
 }
