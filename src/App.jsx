@@ -1,14 +1,19 @@
 import "./App.css";
 import DownloadButton from "./components/DownloadButton";
 import Sidebar from "./components/Sidebar";
-import PeopleOutlineIcon from "@mui/icons-material/PeopleOutline";
-import BusinessIcon from "@mui/icons-material/Business";
+import About from "./components/About";
+import Menu from "./components/Menu";
+import Home from "./pages/Home";
 
 
 export default function App() {
   return (
     <div>
-      <Sidebar />
+     
+<Home />
+
+    
+  
    
      
     </div>
