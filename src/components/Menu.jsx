@@ -23,6 +23,9 @@ const Menu = () => {
       <Button variant="outlined" href="#outlined-buttons">
         Notes
       </Button>
+      <Button variant="outlined" href="#outlined-buttons">
+        OPEN SOURCE
+      </Button>
     </Stack>
   )
 }

@@ -5,7 +5,8 @@ import About from "./components/About";
 import Menu from "./components/Menu";
 import Home from "./pages/Home";
 import ProjectsPage from "./pages/Projects,";
-import ActivityPage from "./pages/Activity";
+import Activity from "./pages/Activity";
+import Skills from "./pages/Skills";
 
 
 export default function App() {
@@ -13,7 +14,7 @@ export default function App() {
     <div>
      
 
-<ActivityPage />
+<Skills />
     
   
    

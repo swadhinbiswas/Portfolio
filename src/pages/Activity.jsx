@@ -1,30 +1,57 @@
-import React from 'react'
-import Menu from '../components/Menu'
+import React from "react";
+import Menu from "../components/Menu";
+import GitHubStats from "../components/GithubStats";
+
+// Assuming Menu is a separate component
+
+// Replace with your preferred styling approach
 
 const Activity = () => {
+  const username = "swadhinbiswas";
   return (
-    <div className="bg-gray-800 rounded-xl ">
-    <header className=" h-16 flex items-center px-12">
-      <Menu />
-    </header>
+    <div className="activity-container space-y-10">
+      <header className="activity-header">
+        <Menu />
+      </header>
 
-    <main className="flex flex-wrap p-4">
-      <div className="flex bg-red-500 h-40 m-2">
+      <main className="activity-main">
+        <h2>Coding Activity</h2>
 
-        
-      </div>
-      <div className="w-full sm:w-1/2 md:w-1/3 bg-red-500 h-40 m-2">
-        {/* Content for the second section */}
-      </div>
-      <div className="w-full sm:w-1/2 md:w-1/3 bg-red-500 h-40 m-2">
-        {/* Content for the third section */}
-      </div>
-      <div className="w-full bg-red-500 h-40 m-2">
-        {/* Content for the fourth section */}
-      </div>
-    </main>
-  </div>
-  )
-}
+        <section className="activity-sections">
+          <div className="activity-section">
+            <div>
+              <img
+                src="https://wakatime.com/share/@theprofessor/df77b7fe-359e-49aa-9316-47bf15cd5ae1.svg"
+                alt="WakaTime coding activity"
+              />
+            </div>
 
-export default Activity
+            <div className="flex space-x-12">
+              <div className="image-container h-80 w-80">
+                <img
+                  src="https://wakatime.com/share/@theprofessor/ccf55960-e4ab-47b6-9d58-b1e938c32749.svg"
+                  alt="Most used languages"
+                />
+              </div>
+              <div className="small-image-container h-80 w-80">
+                <img
+                  src="https://wakatime.com/share/@theprofessor/d1a9dbbe-f598-42a5-97b7-4dbb3e2b5bc4.svg"
+                  alt="Most used languages"
+                />
+              </div>
+            </div>
+          </div>
+          <div className="flex">
+      {/* Other content */}
+      <GitHubStats username={username} />
+    </div>
+
+
+
+        </section>
+      </main>
+    </div>
+  );
+};
+
+export default Activity;
