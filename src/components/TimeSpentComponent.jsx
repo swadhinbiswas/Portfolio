@@ -10,7 +10,7 @@ const TimeSpentComponent = () => {
       try {
         const response = await axios.get('https://api.wakatime.com/api/v1/users/current/stats/week', {
           headers: {
-            Authorization: `Bearer waka_bc7ddd84-41fb-42c4-ad19-1cb2921b49cf`, // Replace with your actual API key
+            Authorization: `Bearer API KEY`, // Replace with your actual API key
           },
         });
 
