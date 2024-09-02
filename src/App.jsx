@@ -7,14 +7,13 @@ import Home from "./pages/Home";
 import ProjectsPage from "./pages/Projects,";
 import Activity from "./pages/Activity";
 import Skills from "./pages/Skills";
+import Education from "./pages/Education";
 
 
 export default function App() {
   return (
     <div>
-     
-
-<Skills />
+  <Education />
     
   
    
