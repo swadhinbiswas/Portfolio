@@ -9,7 +9,7 @@ const Home = () => {
 
     <div className=' rounded-lg  flex '>
        <div className="bg-gray-800  w-full space-x-4 flex rounded-lg border border-blue-500">
-      <div className="flex h-full space-x-9">
+      <div className="flex h-full space-x-1">
         <Sidebar className="bg-gray-800 w-1/4" />
         <div className="flex-1 flex flex-col -left-1 space-y-14">
           <div className="mt-10 ">

@@ -22,7 +22,7 @@ const projects = [
     description: "Streamtape tries to give the user the best experience you can get on a video-sharing website",
     url: "https://github.com/swadhinbiswas/Streamtape",
     github: "https://github.com/swadhinbiswas/Streamtape",
-    picture: "https://private-user-images.githubusercontent.com/107450069/326122830-a0b2566a-45d8-47d8-bb77-9f5d0bcbba76.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MjUxMzcyODQsIm5iZiI6MTcyNTEzNjk4NCwicGF0aCI6Ii8xMDc0NTAwNjkvMzI2MTIyODMwLWEwYjI1NjZhLTQ1ZDgtNDdkOC1iYjc3LTlmNWQwYmNiYmE3Ni5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjQwODMxJTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI0MDgzMVQyMDQzMDRaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT05ZjE2NDZjMTMxNWQ1NjIyYTg2MWIwZTM5NGIxY2Y2NGY3Y2ViMTAyNWFlMTVkYTQ1NGYxYjY2Njk5MGE3MjBlJlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCZhY3Rvcl9pZD0wJmtleV9pZD0wJnJlcG9faWQ9MCJ9.IPO4amVeQlJv_4s5SQWDj7ohFXOp31zH_rojLhaR9Dk",
+    picture: "https://raw.githubusercontent.com/swadhinbiswas/Streamtape/main/Streamtape.png",
     tech: ["Python", "Streamtape API", "Requests"],
     Contribution: "",
   },
@@ -110,9 +110,13 @@ const ProjectsPage = () => {
   };
 
   return (
-    <div className="bg-gray-900 min-h-screen p-8 rounded-lg">
-      <div className='flex gap-x-1'>
+    <div className="bg-gray-900 min-h-screen p-8 rounded-lg border space-x-1">
+      <div className='flex gap-x-1  '>
+        <div className=' space-x-9'>
         <Menu />
+
+        </div>
+       
       </div>
       <br />
       <h1 className="text-3xl text-center text-white mb-8">Projects</h1>
