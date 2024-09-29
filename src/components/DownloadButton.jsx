@@ -2,23 +2,21 @@ import * as React from 'react';
 import Button from '@mui/material/Button';
 import DownloadingIcon from '@mui/icons-material/Downloading';
 
+const downloadLink = document.createElement('a'); // Create the link outside the component
 
 const DownloadButton = () => {
-  const handleDownload = () => {
-    // Create a link element
-    const link = document.createElement('a');
-    link.href = '../assets/cv.pdf'; // Assuming the CV is in the public folder
-    link.download = 'swadhinbiswasCV.pdf';
-    document.body.appendChild(link);
-    link.click();
-    document.body.removeChild(link);
+  downloadLink.href = '../assets/cv.pdf'; // Assuming the CV is in the public folder
+  downloadLink.download = 'swadhinbiswasCV.pdf';
+
+  const handleClick = () => {
+    downloadLink.click(); // Reuse the existing link
   };
 
   return (
     <Button
       variant="contained"
       tabIndex={-1}
-      onClick={handleDownload}
+      onClick={handleClick}
       startIcon={<DownloadingIcon />}
     >
       <span style={{ fontWeight: 'bold' }}>Download CV</span>
