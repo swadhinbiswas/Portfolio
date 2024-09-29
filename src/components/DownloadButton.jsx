@@ -6,7 +6,7 @@ const DownloadButton = () => {
   const handleDownload = () => {
     // Create a link element
     const link = document.createElement('a');
-    link.href = '/assets/cv.pdf'; // Replace with the path to your CV
+    link.href = '../assets/cv.pdf'; // Replace with the path to your CV
     link.download = 'swadhinbiswasCV.pdf'; // The file name for the downloaded CV
     link.click(); // Programmatically click the link to trigger the download
   };
