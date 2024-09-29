@@ -6,7 +6,7 @@ const downloadLink = document.createElement('a'); // Create the link outside the
 
 const DownloadButton = () => {
   downloadLink.href = 'src/assets/cv.pdf'; // Assuming the CV is in the public folder
-  downloadLink.download = 'swadhinbiswasCV.pdf';
+  downloadLink.download = 'cv.pdf';
 
   const handleClick = () => {
     downloadLink.click(); // Reuse the existing link
