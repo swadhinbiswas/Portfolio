@@ -2,13 +2,16 @@ import * as React from 'react';
 import Button from '@mui/material/Button';
 import DownloadingIcon from '@mui/icons-material/Downloading';
 
+
 const DownloadButton = () => {
   const handleDownload = () => {
-    // Create a link element
-    const link = document.createElement('a');
-    link.href = '../assets/cv.pdf'; // Replace with the path to your CV
-    link.download = 'swadhinbiswasCV.pdf'; // The file name for the downloaded CV
-    link.click(); // Programmatically click the link to trigger the download
+  // Create a link element
+  const link = document.createElement('a')
+  link.href = '/cv.pdf' // Assuming the CV is in the public folder
+  link.download = 'swadhinbiswasCV.pdf'
+  document.body.appendChild(link)
+  link.click()
+  document.body.removeChild(link)
   };
 
   return (
